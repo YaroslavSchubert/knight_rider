@@ -1,9 +1,11 @@
 from input import input_read
 
+from communication import init_serial
+
 def main():
-    # ser = serial.Serial("/dev/ttyUSB0", 9600)
     print("Knight rider initialized")
 
+    init_serial()
     input_read()
 
 

@@ -26,6 +26,28 @@ def keypress(key):
         command(CMD.MAX_TURN_LEFT)
     elif key == 'ctrl-right' or key == 'ctrl-d':
         command(CMD.MAX_TURN_RIGHT)
+    elif key == '0':
+        command(CMD.MOTORS_SELECT_ALL)
+    elif key == '1':
+        command(CMD.MOTORS_SELECT_1)
+    elif key == '2':
+        command(CMD.MOTORS_SELECT_2)
+    elif key == '3':
+        command(CMD.MOTORS_SELECT_3)
+    elif key == '4':
+        command(CMD.MOTORS_SELECT_4)
+    elif key == '5':
+        command(CMD.MOTORS_SELECT_5)
+    elif key == '6':
+        command(CMD.MOTORS_SELECT_6)
+    elif key == 'u':
+        command(CMD.SAVE_MAX)
+    elif key == 'U':
+        command(CMD.RESET_MAX)
+    elif key == 'e':
+        command(CMD.ENGINE_ON)
+    elif key == 'E':
+        command(CMD.ENGINE_OFF)
     else:
         print("Invalid command key: {}".format(repr(key)))
 

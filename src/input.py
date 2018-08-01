@@ -26,6 +26,8 @@ def input_read(serial=None):
     is_arrow = 0
     is_ctrl_arrow = 0
     while (reading):
+        if is_arrow == 0:
+            print("input:")
         c = stdin_read_char()
 
         if DEBUG:
@@ -73,3 +75,4 @@ def input_read(serial=None):
             if DEBUG:
                 print("keypress: ", key)
             reading = keypress(key)
+
